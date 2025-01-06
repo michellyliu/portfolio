@@ -1,7 +1,7 @@
 # Portfolio
 Michelle Liu's UX Design portfolio
 
-# Raiyan Bin Sarwar
+# Michelle Liu
 Welcome to my personal portfolio! I’m a Product Designer currently working at JPMorganChase.
 
 ## About Me
