@@ -1,0 +1,9 @@
+# .gitignore
+
+# Ignore all files and directories
+/*
+
+# Except the files you want to track
+!index.html
+!styles.css
+!script.js
