@@ -277,14 +277,15 @@ main {
 
 .about-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem;
+  width: 100%
 }
 
 .about.left {
   flex: 1;
-  max-width: 60%; /* You can adjust the percentage as needed */
+  max-width: 70%; /* You can adjust the percentage as needed */
 }
 
 .about-image {
