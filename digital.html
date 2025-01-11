@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Michelle Liu's Artworks" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Michelle Liu - Digital Art</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="index.html" class="link"
+          >ML.</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#art">Art</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="index.html#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Art Section -->
+        <h1 class="section__title">Digital Art</h1>
+
+        <section class="section ">
+        <h3 class="subsection__title">Graphic Art & Graphic Design</h3>
+        <div class="art__grid">
+          <!-- Artwork 1 -->
+          <div class="art">
+            <img src="images/Graphic Design 1.png" alt="Graphic" class="art__image" />
+          </div>
+
+          <!-- Artwork 2 -->
+          <div class="art">
+            <img src="images/Graphic Design 4.png" alt="Graphic" class="art__image" />
+          </div>
+
+          <!-- Artwork 3 -->
+          <div class="art">
+            <img src="images/Graphic Design 5.jpeg" alt="Graphic" class="art__image" />
+          </div>
+
+          <!-- Artwork 4 -->
+          <div class="art">
+            <img src="images/Graphic Design 2.png" alt="Graphic" class="art__image" />
+          </div>
+
+          <!-- Artwork 5 -->
+          <div class="art">
+            <img src="images/Graphic Design 3.png" alt="Graphic" class="art__image" />
+          </div>
+
+          <!-- Artwork 6 -->
+          <div class="art">
+            <img src="images/Graphic Art 1.jpeg" alt="Graphic" class="art__image" />
+          </div>
+        </div>
+    </section>
+        <section class="section "> 
+        <!-- Videos -->
+        <h3 class="subsection__title">Animation</h3>
+
+        <video class="art__video" controls>
+            <source src="videos/michelle_name.MP4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+        <video class="art__video" controls>
+            <source src="videos/Michelle_sound.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+
+      </section>
+    <!-- Contact -->
+    <section class="section contact center" id="contact">
+        <h2 class="section__title">Let's connect!</h2>
+      
+        <div class="contact">
+      
+          <!--<a 
+            href="https://drive.google.com/file/d/1ifTaHrecrkOwmlRerB1XPdLEgySBJOED/view?usp=sharing"
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="resume"
+          >
+            <span class="btn btn--outline">Resume</span>
+          </a>-->
+          <a
+            href="mailto:liumichelle3@gmail.com"
+            aria-label="email"
+            class="link link--iconcontact"
+          >
+            <i aria-hidden="true" class="fas fa-envelope"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/liu-m/"
+            target="_blank" 
+            rel="noopener noreferrer"
+            aria-label="linkedin"
+            class="link link--iconcontact"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+        
+      </section>
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/michellyliu/portfolio"
+        class="link footer__link"
+      >
+        Coded with HTML, CSS, and JavaScript by Michelle Liu
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

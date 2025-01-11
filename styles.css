@@ -247,6 +247,11 @@ main {
   text-transform: uppercase;
 }
 
+.subsection__title {
+  text-align: left;
+  margin-bottom: 1em;
+}
+
 .nav__list {
   margin-right: 1.5em;
   display: flex;
@@ -278,14 +283,15 @@ main {
   text-align: left; 
   letter-spacing: .02em; /* Adjust as needed */
   animation: 
-    typing 3s steps(40, end),
+    typing 2.5s steps(40, end),
     blink-caret .75s step-end infinite;
+    width: 18ch;
 }
 
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 18ch; }
 }
 
 /* The typewriter cursor effect */
@@ -330,6 +336,9 @@ main {
   text-align: center;
   box-shadow: var(--shadow);
   transition: transform 0.2s linear;
+  display: block; /* Allow the anchor tag to take up the full width and height */
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Keep text color from the parent container */
 }
 
 .project:hover {
@@ -338,6 +347,7 @@ main {
 
 .project__description {
   margin-top: 1em;
+  text-align: left;
 }
 
 .project__stack {
@@ -369,6 +379,48 @@ main {
 
 .skills__list-item {
   margin: 0.5em;
+}
+
+.art__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 2 equal-width columns */
+  gap: 15px; /* Space between items */
+  justify-content: center; /* Center the content horizontally */
+  align-items: start; /* Align items to the top */
+  max-width: 1100px; /* Optional: limit the grid width */
+  margin: 0 auto; /* Center the grid horizontally */  
+}
+
+.art {
+  border-radius: 8px; /* Rounded corners */
+  text-align: center; /* Center-align content */
+}
+
+.art__image {
+  max-width: 100%; /* Makes the image responsive */
+  height: auto;    /* Maintains aspect ratio */
+  border-radius: 5px; /* Optional styling */
+  
+}
+
+.art__description {
+  margin-top: 1em;
+  text-align: left;
+}
+
+.art__video {
+  width: 100%; /* Make the video fill the container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Optional: rounded corners */
+  margin-top: 1em; /* Add some space between the description and the video */
+}
+
+.styled-line {
+  border: 0;              /* Removes the default border */
+  height: 1px;            /* Defines the thickness of the line */
+  background-color: #969696; /* Sets the color of the line */
+  margin-top: 20px;       /* Adds space above the line */
+  margin-bottom: 20px;    /* Adds space below the line */
 }
 
 .contact {
