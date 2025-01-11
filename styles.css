@@ -94,7 +94,13 @@ button {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.6rem;
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  .about-image {
+    display: none; /* Hides the photo on mobile screens */
   }
 }
 
