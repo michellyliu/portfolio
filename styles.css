@@ -100,7 +100,7 @@ button {
     font-size: 1.5rem;
   }
   .about-image {
-    display: none; /* Hides the photo on mobile screens */
+    flex-shrink: 0;
   }
 }
 
@@ -277,6 +277,12 @@ main {
   margin-top: 3em;
 }
 
+/* Headings and Description */
+.about h1 {
+  font-size: clamp(1.8rem, 4vw, 3rem); /* Adjust size dynamically */
+  word-wrap: break-word;
+}
+
 .about__name {
   color: var(--clr-primary);
 }
@@ -302,9 +308,10 @@ main {
 }
 
 .about__image {
-  width: 100%; /* This will make the image take the full width of its container */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 50%; /* Optional: to make the image circular */
+  width: 100%; /* Ensure the image scales properly */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make the image round */
+  object-fit: cover; /* Ensure the image fills its container neatly */
 }
 
 /* CURSOR */
@@ -334,11 +341,12 @@ main {
 
 .about__role {
   margin-top: 1.2em;
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Adjust font size dynamically */
 }
 
 .about__desc {
-  font-size: 1rem;
   max-width: 600px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem); /* Adjust font size dynamically */
 }
 
 .about__desc,
@@ -544,6 +552,11 @@ main {
     transition: width 0.2s ease-in-out;
   }
 
+  .project {
+    margin: 1em; /* Adjusted margin for more space on small screens */
+   
+  }
+
   .display-nav-list {
     width: 100%;
   }
@@ -562,8 +575,16 @@ main {
     margin-top: 2em;
   }
 
+  .about.left {
+    max-width: 95%; /* Ensure text takes full width on mobile */
+  }
+
+  .about-image {
+    display: none; /* Hide the image on mobile screens */
+  }
+
   .footer {
-    padding: 2em;
+    padding: 1em;
     margin-top: 3em;
   }
 
